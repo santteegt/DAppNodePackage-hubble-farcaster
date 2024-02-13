@@ -1,0 +1,47 @@
+{
+  "name": "hubble-farcaster.public.dappnode.eth",
+  "version": "0.1.0",
+  "description": "Hubble is an implementation of a Farcaster Hub, written in TypeScript and Rust.",
+  "upstreamVersion": "1.10.0",
+  "upstreamRepo": "farcasterxyz/hubble",
+  "upstreamArg": "UPSTREAM_VERSION",
+  "type": "service",
+  "categories": ["Developer tools"],
+  "architectures": ["linux/amd64"],
+  "author": "santteegt",
+  "links": {
+    "homepage": "https://your-project-homepage-or-docs.io"
+  },
+  "mainService": "hubble",
+  "license": "GPL-3.0",
+  "requirements": {
+    "minimumDappnodeVersion": "0.2.60"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santteegt/DAppNodePackage-hubble-farcaster.git"
+  },
+  "bugs": {
+    "url": "git+https://github.com/santteegt/DAppNodePackage-hubble-farcaster/issues"
+  },
+  "exposable": [
+    {
+      "name": "Hubble API Port",
+      "description": "Hubble HTTP API Port",
+      "serviceName": "hubble",
+      "port": 2281
+    },
+    {
+      "name": "Hubble Gossip Port",
+      "description": "Hubble Gossip Port",
+      "serviceName": "hubble",
+      "port": 2282
+    },
+    {
+      "name": "Hubble RPC Port",
+      "description": "Hubble RPC Port",
+      "serviceName": "hubble",
+      "port": 2283
+    }
+  ]
+}
